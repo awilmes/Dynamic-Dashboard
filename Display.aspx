@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Test.aspx.cs" Inherits="Test" Async="true" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Display.aspx.cs" Inherits="Display" Async="true" %>
 
 <!DOCTYPE html>
 
@@ -34,6 +34,24 @@
         <br />
         <br />
         <div id="weather">
+            <asp:Label ID="lblLocation" runat="server" Text="Location: "></asp:Label>
+            <br />
+            <br />
+            <asp:Image ID="imgIcon" runat="server" />
+            <br />
+            <br />
+            <asp:Label ID="lblTemp" runat="server" Text="Current Temperature: "></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="lblWind" runat="server" Text="Wind Speed: "></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="lblElevation" runat="server" Text="Elevation: "></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="lblUpdated" runat="server" Text="Updated: "></asp:Label>
             <asp:GridView ID="gridCoordinates" runat="server" AutoGenerateColumns="false">
                 <Columns>
                     <asp:BoundField DataField="lat" HeaderText="Latitude" />
